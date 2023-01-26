@@ -19,5 +19,5 @@ class Politiker:
         self.poeng += n
 
     def tell_poeng(self):
-        self.poeng += sjekk_poeng(self.fornavn)
+        self.poeng += sjekk_poeng(self.etternavn)
         
