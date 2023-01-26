@@ -2,6 +2,7 @@ import json
 from politiker import Politiker
 from parti import Parti
 from liga import Liga
+from scrapping import sjekk_poeng
 
 fil = open("politikere.json")
 politikere = json.load(fil)
@@ -26,3 +27,6 @@ liga1 = Liga()
 liga1.legg_til_parti(parti1)
 liga1.legg_til_parti(parti2)
 print(liga1.poengtavle())
+
+p1.tell_poeng()
+print(p1.poeng)

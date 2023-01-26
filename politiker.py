@@ -1,3 +1,5 @@
+from scrapping import sjekk_poeng
+
 class Politiker:
     def __init__(self, fornavn, etternavn, parti, verdi):
         self.fornavn = fornavn
@@ -15,3 +17,7 @@ class Politiker:
 
     def gi_poeng(self, n):
         self.poeng += n
+
+    def tell_poeng(self):
+        self.poeng += sjekk_poeng(self.fornavn)
+        
